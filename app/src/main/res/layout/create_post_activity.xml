@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/content"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:padding="13dp"
+            android:clickable="true"
+            android:id="@+id/close"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_gravity="center|left"
+            android:src="@drawable/ic_close"
+            android:layout_width="44dp"
+            android:layout_height="44dp"/>
+        <LinearLayout
+            android:layout_gravity="center|top"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/author_name"
+                android:layout_centerInParent="true"
+                android:textSize="23sp"
+                android:gravity="center"
+
+                android:textColor="@color/Black"
+                android:text="Олег"
+                android:fontFamily="@raw/fontbold"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+            <ImageView
+                android:tint="@color/colorAccent"
+                android:src="@drawable/ic_arrow_bottom"
+                android:layout_marginLeft="4dp"
+                android:layout_width="20dp"
+                android:padding="4dp"
+                android:layout_height="16dp"/>
+        </LinearLayout>
+       
+        <ImageView
+            android:padding="13dp"
+            android:clickable="true"
+            android:id="@+id/success"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_gravity="center|right"
+            android:src="@drawable/ic_download"
+            android:layout_width="44dp"
+            android:layout_height="44dp"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <View
+        android:background="@color/GrayLight"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="0.7dp"/>
+        <EditText
+            android:id="@+id/text"
+            android:hint="Расскажите об этом всем!"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/White"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:maxLines="10"
+            android:textSize="15sp"
+            android:textColor="@color/Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <include android:layout_margin="5dp" layout="@layout/snippet"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
